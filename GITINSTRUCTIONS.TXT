@@ -1,0 +1,67 @@
+Step 2: Initialize Git (if not done already)
+
+    Open the terminal in VS Code (Ctrl + `` or go to View > Terminal`).
+
+    Run this command to initialize Git:
+
+    bash
+
+    git init
+
+Step 3: Configure Git Username and Email (if not set up yet)
+
+    Set your name (replace Your Name with your actual name):
+
+    bash
+
+git config --global user.name "Your Name"
+
+Set your email (replace with your GitHub email):
+
+bash
+
+    git config --global user.email "your.email@example.com"
+
+Step 4: Add the GitHub Repository as Remote
+
+    Go to GitHub and create a new repository (without adding a README or .gitignore).
+
+    Copy the repository URL, which looks like https://github.com/your-username/your-repo-name.git.
+
+    Add this repository as a remote by running:
+
+    bash
+
+    git remote add origin <repository-url>
+
+    Replace <repository-url> with the actual URL.
+
+Step 5: Stage and Commit Your Project Files
+
+    Add all files to staging:
+
+    bash
+
+git add .
+
+Commit your files with a message:
+
+bash
+
+    git commit -m "Initial commit"
+
+Step 6: Push to GitHub
+
+    Push your local repository to the GitHub repository:
+
+    bash
+
+    git push -u origin main
+
+    (If your branch is named master instead of main, replace main with master.)
+
+Verification
+
+    Go to your GitHub repository page and refresh. You should see your project files uploaded.
+
+These steps will connect your project to GitHub, commit the files, and push them to your repository.
